@@ -2,12 +2,12 @@
 
 	$a = 3;
 	$b = 0;
-	$operator = $a + $b ;
+	$operator = $a / $b ;
 	
-	if ( $b !== 0 && $a / $b  ) {
-		echo "На ноль делить нельзя! ";
+	if ( $b !== 0 ) {
+		$operator = $a / $b ;
 	} 	else {
-		echo $operator;
+		echo "На ноль делить нельзя! ";
 	}
 	
 ?>

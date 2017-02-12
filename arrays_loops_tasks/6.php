@@ -4,15 +4,14 @@
 	'green'=>'зеленый',
 	'red'=>'красный',
 	'blue'=>'голубой');
-	
 	foreach ($arr as $key => $val) {
-		$en = array ( $key );
-		var_dump ($en) ;
+		$en = array ($key);
+		print_r ($en) ;
 		echo "<br>";
-}
+} 	
 	foreach ($arr as $k => $v) {
 		$ru = array ( $v );
-		var_dump ($ru) ;
+		print_r ($ru) ;
 		echo "<br>";
 	}
 	
