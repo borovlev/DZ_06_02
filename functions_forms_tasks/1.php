@@ -1,5 +1,4 @@
 <?php
-
 		$result = array();
 		$a = $_POST['a'];
 		$b = $_POST['b'];

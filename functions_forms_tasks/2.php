@@ -2,19 +2,22 @@
 //Создать форму с элементом textarea. При отправке формы скрипт должен выдавать ТОП3 длинных слов в тексте. Реализовать с помощью функции.
 
 $a = $_POST['a'];
-$myArray = array ();
+$a = explode(" ", $a);
 
 function top3 ($a) {
-	$value = explode(" ", $a);
-	for ($i=0; $i <= count($a) ; $i++) {
-		$myArray[] = $value[$i];		
+	$arr = [];
+	foreach ($a as $word) {
+		$arr[$word] = strlen($word);
 	}
-	rsort($myArray);
-	echo $myArray[1];
-	echo $myArray[2];
-	echo $myArray[3];
+	arsort ($arr);
+	array_slice($arr, 0, 3);
+	echo "<pre>";
+	var_dump(array_slice($arr, 0, 3));
+	echo "<pre>";
+	
 }
-	top3($a);
+top3($a);
+
 ?>
 
 <!DOCTYPE HTML>
@@ -30,5 +33,6 @@ function top3 ($a) {
 	<form method="post">
 		<textarea name="a"></textarea><br>
 		<button>Go</button>
+	</form>
  </body>
 </html>
