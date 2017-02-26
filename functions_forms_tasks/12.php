@@ -1,5 +1,5 @@
 <?php
-function fuckOff ($a) {
+function res ($a) {
 
 $arr = explode(" ", $a); 
 $backTxt = "";
@@ -11,7 +11,7 @@ $backTxt .= " " . $arr[$i];
 return $backTxt;
 }
 
-echo fuckOff($_POST['a']);
+echo res($_POST['a']);
 ?>
 
 <!DOCTYPE HTML>
