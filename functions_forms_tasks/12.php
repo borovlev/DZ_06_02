@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 function myrev ($a) {
+=======
+function res ($a) {
+>>>>>>> dc6af4c334a465030b598d5682b244fd0e304517
 
 $arr = explode(".", $a); 
 $backTxt = "";
@@ -10,9 +14,14 @@ $backTxt .= " " . $arr[$i];
 
 return $backTxt;
 }
+<<<<<<< HEAD
 if ($_POST) {
 echo myrev($_POST['a']);
 }
+=======
+
+echo res($_POST['a']);
+>>>>>>> dc6af4c334a465030b598d5682b244fd0e304517
 ?>
 
 <!DOCTYPE HTML>
