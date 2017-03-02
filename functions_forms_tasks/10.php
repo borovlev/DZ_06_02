@@ -1,19 +1,18 @@
 <?php
-function myrev ($a) {
 
-$arr = explode(".", $a); 
-$backTxt = "";
-
-for ($i = count($arr) - 1; $i >= 0; $i--) {
-$backTxt .= " " . $arr[$i];
-}
-
-return $backTxt;
-}
 if ($_POST) {
-echo myrev($_POST['a']);
+	$str = $_POST['a'];
+	 uniq ($str) ;
+}
+
+function uniq ( $a ) {
+	$arr = explode(" ", mb_strtolower($a));
+	$un = array_unique($arr);
+	echo "Уникальных слов - " . count($un);
 }
 ?>
+
+
 
 <!DOCTYPE HTML>
 <html>

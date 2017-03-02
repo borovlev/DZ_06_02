@@ -7,5 +7,5 @@ function derectory ( $a ) {
 		echo "</pre>";
 		
 }
-derectory ('C:/xampp/htdocs');
+derectory ('..');
 ?>

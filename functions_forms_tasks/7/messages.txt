@@ -1,0 +1,5 @@
+a:2:{s:8:"username";s:5:"artem";s:1:"a";s:6:"privet";}
+a:2:{s:8:"username";s:6:"aasfd ";s:1:"a";s:8:"sdf ad f";}
+a:2:{s:8:"username";s:6:"aasfd ";s:1:"a";s:8:"sdf ad f";}
+a:2:{s:8:"username";s:6:"aasfd ";s:1:"a";s:8:"sdf ad f";}
+a:2:{s:8:"username";s:3:"sdf";s:1:"a";s:7:"sdfa ds";}

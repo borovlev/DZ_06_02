@@ -1,23 +1,26 @@
 <?php
-		$result = array();
-		$a = $_POST['a'];
-		$b = $_POST['b'];
+
  function getCommonWords($a,$b) {
 	
 	$value1 = explode(" ", $a);
 	$value2 = explode(" ", $b);
-	for ($i = 0; $i <= count($a) ; $i++) {
-		for ($n = 0; $n <= count($b); $n++) {
+	for ($i = 0; $i < count($value1) ; $i++) {
+		for ($n = 0; $n < count($value2); $n++) {
 		if ( $value1[$i] == $value2[$n]) {
 				$result[] = $value1[$i];
+                 continue;
 			}
 		}
 	}
 	return $result;
  }
- getCommonWords($a,$b);
- print_r(getCommonWords($a,$b));
- 
+if ($_POST) {
+    $result = array();
+    $a = $_POST['a'];
+    $b = $_POST['b'];
+
+    print_r(getCommonWords($a, $b));
+}
 ?>
 
 <!DOCTYPE HTML>
@@ -34,5 +37,6 @@
 		<textarea name="a"></textarea><br>
 		<textarea name="b"></textarea><br>
 		<button>Go</button>
+	</form>
  </body>
 </html>

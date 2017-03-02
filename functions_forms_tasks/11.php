@@ -1,13 +1,16 @@
 <?php
+if ($_POST) {
 $str = $_POST['a'];
-function UP ($str){
-$str = explode("." , $str);
-foreach ( $str as $v ){
-$a = ucfirst($v);
-echo "$a. ";
-}
-}
 UP ($str);
+}
+function UP ($str){
+$str = explode(". " , $str);
+foreach ( $str as $val ){
+
+echo mb_strtoupper(mb_substr($val, 0, 1)) . mb_substr($val, 1);
+}
+}
+
  ?>
 
 <!DOCTYPE HTML>
